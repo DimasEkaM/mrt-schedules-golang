@@ -7,5 +7,5 @@ type Station struct {
 
 type StationResponse struct {
 	Id   string `json:"id"`
-	Name string `json:"name"`
+	Name string `json:"name"`   
 }
