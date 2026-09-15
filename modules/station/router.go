@@ -66,7 +66,7 @@ func CheckSchedulesByStation(c *gin.Context, service Service){
 		http.StatusOK,
 		response.APIResponse{
 			Success: true,
-			Message: "Successfully get shedules by station",
+			Message: "Successfully get schedules by station",
 			Data: datas,
 		},
 	)

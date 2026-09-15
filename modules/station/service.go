@@ -8,7 +8,6 @@ import (
 	"time"
 
 	"github.com/DimasEkaM/mrt-schedules-golang/common/client"
-
 )
 
 
@@ -114,7 +113,7 @@ func ConvertDataToResponses(schedule Schedule) (response []ScheduleResponse, err
 		if item.Format("15:04") > time.Now().Format("15:04"){
 			response = append(response, ScheduleResponse{
 				StationName	: LebakBulusTripName,
-				Time		: item.Format("15:04")
+				Time		: item.Format("15:04"),
 			})
 		}
 	}
@@ -123,7 +122,7 @@ func ConvertDataToResponses(schedule Schedule) (response []ScheduleResponse, err
 		if item.Format("15:04") > time.Now().Format("15:04"){
 			response = append(response, ScheduleResponse{
 				StationName	: BundaranHITripName,
-				Time		: item.Format("15:04")
+				Time		: item.Format("15:04"),
 			})
 		}
 	}
